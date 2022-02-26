@@ -67,36 +67,15 @@
 @media screen and (min-width: 768px) {
   .tipos .container {
     align-items: center;
+    flex-flow: row wrap;
+    text-align: center;
   }
   .tipo__carro--sedans,
   .tipo__carro--suvs,
   .tipo__carro--luxury {
-    width: 20%;
-    padding: 1rem;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1.5rem;
-    margin-top: 5rem;
-  }
-
-  .tipo__carro--sedans {
-    margin-left: 3rem;
-    border-radius: 12px;
-  }
-
-  .tipo__carro--suvs {
-    border-radius: 12px;
-  }
-
-  .tipo__carro--luxury {
-    border-radius: 12px;
-  }
-
-  .tipo--carro___botao--sedans,
-  .tipo--carro___botao--suvs,
-  .tipo--carro___botao--luxury {
-    width: 100%;
+    width: 15%;
+    flex: 1 0 0;
+    display: inline-block;
   }
 }
 
