@@ -1,0 +1,158 @@
+.tipos .container {
+  display: flex;
+}
+.tipo__carro--sedans {
+  background: var(--Bright-orange);
+  margin: 4rem 1rem 0;
+  padding: 3rem;
+  border-top-left-radius: 2.5%;
+  border-top-right-radius: 2.5%;
+}
+
+.tipo__carro--suvs {
+  background: var(--Dark-cyan);
+  margin: 0 1rem 0;
+  padding: 3rem;
+}
+
+.tipo__carro--luxury {
+  background: var(--Very-dark-cyan);
+  margin: 0 1rem 0;
+  padding: 3rem;
+  border-bottom-left-radius: 2.5%;
+  border-bottom-right-radius: 2.5%;
+}
+
+.tipo__carro___imagem {
+  margin: 0 0 1.1rem;
+}
+.tipo__carro___titulo {
+  font-family: var(--titulo);
+  font-size: 25px;
+  color: var(--Very-light-gray);
+}
+
+.tipo__carro___descricao {
+  font-family: var(--texto);
+  color: var(--Very-light-gray);
+  font-size: 15px;
+  border-radius: 0%;
+}
+
+.tipo--carro___botao--sedans,
+.tipo--carro___botao--suvs,
+.tipo--carro___botao--luxury {
+  background-color: var(--Very-light-gray);
+  font-family: var(--texto);
+  font-size: 15px;
+  border-radius: 32px;
+  border-color: var(--Very-light-gray);
+  box-shadow: none;
+  padding: 0.5rem;
+  width: 65%;
+}
+
+.tipo--carro___botao--sedans {
+  color: var(--Bright-orange);
+}
+
+.tipo--carro___botao--suvs {
+  color: var(--Dark-cyan);
+}
+
+.tipo--carro___botao--luxury {
+  color: var(--Very-dark-cyan);
+}
+
+@media screen and (min-width: 768px) {
+  .tipos .container {
+    align-items: center;
+  }
+  .tipo__carro--sedans,
+  .tipo__carro--suvs,
+  .tipo__carro--luxury {
+    width: 20%;
+    padding: 1rem;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem;
+    margin-top: 5rem;
+  }
+
+  .tipo__carro--sedans {
+    margin-left: 3rem;
+    border-radius: 12px;
+  }
+
+  .tipo__carro--suvs {
+    border-radius: 12px;
+  }
+
+  .tipo__carro--luxury {
+    border-radius: 12px;
+  }
+
+  .tipo--carro___botao--sedans,
+  .tipo--carro___botao--suvs,
+  .tipo--carro___botao--luxury {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .tipos .container {
+    justify-content: 0;
+  }
+  .tipo__carro--sedans,
+  .tipo__carro--suvs,
+  .tipo__carro--luxury {
+    width: 15%;
+
+    padding: 3rem 2rem 7rem 2rem;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tipo__carro--sedans {
+    background: var(--Bright-orange);
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    margin: 0px;
+    margin-left: 15rem;
+    margin-top: 5rem;
+  }
+
+  .tipo__carro--suvs {
+    background: var(--Dark-cyan);
+    border-radius: 0;
+    margin: -4px;
+  }
+
+  .tipo__carro--luxury {
+    background: var(--Very-dark-cyan);
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+    margin: -4px;
+  }
+
+  .tipo--carro___botao--sedans,
+  .tipo--carro___botao--suvs,
+  .tipo--carro___botao--luxury {
+    width: 100%;
+  }
+
+  .tipo--carro___botao--sedans,
+  .tipo--carro___botao--luxury {
+    width: 65%;
+    margin-top: 7rem;
+  }
+  .tipo--carro___botao--suvs {
+    margin-top: 8.211rem;
+  }
+}
